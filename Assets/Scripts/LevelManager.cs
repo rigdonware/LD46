@@ -141,7 +141,7 @@ public class LevelManager : MonoBehaviour
 		spring.mDays[2] = new Day(1, 1, 1, 3, 3);
 		spring.mDays[2].mWeatherReport = "It looks like all sun tomorrow. Animals will be out adventuring!";
 		spring.mDays[3] = new Day(1, -1, 1, 1, 1);
-		spring.mDays[3].mWeatherReport = "Light rain tomorrow. Let's give those flowers a drink!";
+		spring.mDays[3].mWeatherReport = "Light rain tomorrow. The rain will give those flowers a drink!";
 		spring.mDays[4] = new Day(1, -2, 1, 1, 1);
 		spring.mDays[4].mWeatherReport = "Heavy rain on the last day of spring! Stay indoors and cover up those plants!";
 

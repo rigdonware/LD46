@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
 
 	public void LoadShop()
 	{
-		mTotalMoney += 50;
+		mTotalMoney += 100;
 		mShop.GetComponent<ShopManager>().UpdateText();
 		mShop.SetActive(true);
 		if (!mUsingSwatter)
@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
 		mFlowerScript.Restart();
 		mCurrentDay = 0;
 		mCurrentSeason = 0;
-		mTotalMoney = 100;
+		mTotalMoney = 200;
 		mGameOverScreen.SetActive(false);
 		NextLevel();
 	}

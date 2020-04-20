@@ -45,7 +45,7 @@ public class EnemySpawner : MonoBehaviour
 			GameObject enemy = Instantiate(GetRandomGroundEnemy(), position, Quaternion.identity, mEnemyContainer.transform);
 			//enemy.GetComponent<Enemy>().SetRandomGroundEnemy();
 			enemy.GetComponent<Enemy>().mId = mEnemyCounter;
-			mNextGroundSpawn = Random.Range((3 / GameManager.instance.mCurrentDayStats.mGroundSpawnRate), 8);
+			mNextGroundSpawn = Random.Range((3 / GameManager.instance.mCurrentDayStats.mGroundSpawnRate), (8 / GameManager.instance.mCurrentDayStats.mGroundSpawnRate));
 			mGroundCounter = 0;
 			mEnemyCounter++;
 		}
@@ -57,7 +57,7 @@ public class EnemySpawner : MonoBehaviour
 			GameObject enemy = Instantiate(GetRandomAirEnemy(), mLeftAirSpawner.transform.position, Quaternion.identity, mEnemyContainer.transform);
 			//enemy.GetComponent<Enemy>().SetRandomAirEnemy();
 			enemy.GetComponent<Enemy>().mId = mEnemyCounter;
-			mNextAirSpawn = Random.Range((3 / GameManager.instance.mCurrentDayStats.mAirSpawnRate), 8);
+			mNextAirSpawn = Random.Range((3 / GameManager.instance.mCurrentDayStats.mAirSpawnRate), (8 / GameManager.instance.mCurrentDayStats.mAirSpawnRate));
 			mAirCounter = 0;
 			mEnemyCounter++;
 		}

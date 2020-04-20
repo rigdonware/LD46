@@ -132,7 +132,8 @@ public class Flower : MonoBehaviour
 
 	void UpdateFoodValue(float value)
 	{
-		mFoodBar.value += value;
+		if(mFoodValue <= 100)
+			mFoodBar.value += value;
 		mFoodValue += value;
 		int newValue = (int)mFoodValue;
 		mFoodBarText.text = (newValue.ToString() + "/100");
@@ -140,7 +141,8 @@ public class Flower : MonoBehaviour
 
 	void UpdateWaterValue(float value)
 	{
-		mWaterBar.value += value;
+		if(mWaterValue <= 100)
+			mWaterBar.value += value;
 		mWaterValue += value;
 		int newValue = (int)mWaterValue;
 		mWaterBarText.text = (newValue.ToString() + "/100");
